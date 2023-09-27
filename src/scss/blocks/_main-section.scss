@@ -23,12 +23,33 @@
     }
 
     &__info {
+        padding-top: 167px;
+        padding-bottom: 184px;
     }
 
     &__slogan {
+        color: var(--white);
+        opacity: 0.8;
+        font-size: 18px;        
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 20px;
+        letter-spacing: 3px;
+        margin-bottom: 63px;
     }
 
     &__title {
+        max-width: 670px;
+        color: var(--white);
+        font-size: 80px;
+        font-family: var(--font-accent);
+        font-weight: 400;
+        line-height: 90px;
+        margin-bottom: 90px;
+        span {
+            color: var(--accent);
+        }
+    
     }
 
     &__buttons {
