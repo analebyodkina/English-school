@@ -44,21 +44,37 @@
         img {
             max-width: 658px;
         }
+        
     }
+    &__bottom {
+        position: relative;
+        z-index: 10;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #084FC7 0%, rgba(8, 79, 199, 0) 100%); 
+              z-index: 1;       
+            }
 
+    }
     &__brands {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 130rem;
         padding: 50rem 0;
+        border: 1px solid #707070;
+        position: relative;
+        z-index: 10;
         img {
             max-width: 120rem;
         }
+
     }
 }
-.container {
-}
-.btn {
-}
+
 
