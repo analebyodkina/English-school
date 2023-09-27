@@ -1,0 +1,64 @@
+.main-section {
+    background: url('/img/main-bg.jpg') 0 0/100% 100%  no-repeat;
+    &__top {
+        position: relative;
+        z-index: 10;
+        &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(257deg, rgba(4, 1, 108, 0.80) 0%, rgba(73.99, 22.44, 189.29, 0.80) 100%); 
+                     
+            }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        z-index: 8;
+        position: relative;
+    }
+
+    &__info {
+    }
+
+    &__slogan {
+    }
+
+    &__title {
+    }
+
+    &__buttons {
+    }
+
+    &__form {
+    }
+
+    &__btn {
+    }
+
+    &__img {
+        img {
+            max-width: 658px;
+        }
+    }
+
+    &__brands {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 130rem;
+        padding: 50rem 0;
+        img {
+            max-width: 120rem;
+        }
+    }
+}
+.container {
+}
+.btn {
+}
+
