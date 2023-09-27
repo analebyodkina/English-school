@@ -35,5 +35,5 @@ img {
     border-radius: 16rem;
     height: 10px;
     width: 8rem;
-    background-color: rgba(red, $alpha: 0.9);    
+    background-color: rgba(var(--accent), 0.9);    
 }

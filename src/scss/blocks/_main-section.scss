@@ -53,6 +53,27 @@
     }
 
     &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+        margin-bottom: 76px;
+        a {
+            color: var(--white);
+            font-size: 18px;
+            font-family: Saira;
+            font-weight: 500;
+            line-height: 52px;
+        }
+        ._bordered {
+            display: inline-flex;
+            padding: 12px 34px;
+            border-radius: 10px;
+            border: 2px solid var(--white);
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 1px;
+        }
+        
     }
 
     &__form {
@@ -62,6 +83,7 @@
     }
 
     &__img {
+        // transform: translateX(97px);
         img {
             max-width: 658px;
         }
