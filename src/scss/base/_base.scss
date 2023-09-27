@@ -35,5 +35,18 @@ img {
     border-radius: 16rem;
     height: 10px;
     width: 8rem;
-    background-color: rgba(var(--accent), 0.9);    
+    background-color: var(--accent);    
+}
+
+.btn {
+	display: inline-block;
+	background: linear-gradient(102deg, #083F9B 0%, #7F56D9 100%);
+	border-radius: 10px; 
+	padding: 18px 31px;
+	color: var(--white);
+	font-size: 20px;	
+	font-weight: 500;
+	line-height: 22px;
+
+	
 }

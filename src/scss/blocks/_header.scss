@@ -14,13 +14,20 @@
 	&__nav {
 		ul{
 			display: flex;
-		gap: 50px;
+			gap: 50px;
+		}
+		a {
+			color: var(--dark-blue);
+			font-size: 20px;			
+			font-weight: 500;
+			text-transform: capitalize;
+			line-height: 26px;						
+		}
+		a.active {
+			color: var(--accent);
 		}
 		
-	}
-
-	&__li {
-	}
+	}	
 
 	&__icons {
 		display: flex;
@@ -32,6 +39,16 @@
 	}
 
 	&__buttons {
+		display: flex;
+		align-items: center;
+		gap: 39px;
+		a:first-of-type {
+			color: #4A4A4A;
+			font-size: 20px;			
+			font-weight: 500;
+			text-decoration: underline;
+			line-height: 35px;			
+		}
 	}
 }
 .active {

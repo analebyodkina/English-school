@@ -77,6 +77,21 @@
     }
 
     &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 490px;
+        background: var(--white);
+        width: 100%;
+        border-radius: 7px;
+        padding: 10px;
+        input {
+            color: #4F547B;
+            font-size: 16rem; 
+            width: 100%;
+            padding: 0 15px 0 25px;           
+            
+        }
     }
 
     &__btn {
