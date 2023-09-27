@@ -1,10 +1,47 @@
 .header {
-	background-color: rgb(195, 220, 231);
-	padding: 50px 0;
+	width: 100%;	
+	padding: 27px 15px;	
+	display: flex;	
+	align-items: center;
+	gap: 140rem;
 
-	&__row {
+	
+
+	&__logo {
+		margin-right: auto;
+	}
+
+	&__nav {
+		ul{
+			display: flex;
+		gap: 50px;
+		}
+		
+	}
+
+	&__li {
+	}
+
+	&__icons {
 		display: flex;
-		justify-content: space-between;
 		align-items: center;
+		gap: 30rem;
+		img {
+			max-width: 25rem;
+		}
+	}
+
+	&__buttons {
 	}
 }
+.active {
+}
+.btn {
+}
+.mobile-nav-btn {
+}
+.none {
+}
+.nav-icon {
+}
+

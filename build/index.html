@@ -8,16 +8,33 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 	<body>
-		<header class="header">
-    <div class="container">
-        <div class="header__row">
-            <div class="logo">Logo</div>
-            <div class="text">header wrks</div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
+		<div class="wrapper">			
+			<header class="header container">    
+    
+        <div class="header__logo">MY Logo</div>
+        <div class="header__nav">
+                <ul>
+                    <li class="header__li active">Home</li>
+                    <li class="header__li">Courses</li>
+                    <li class="header__li">Blog</li>
+                    <li class="header__li">Shop</li>
+                    <li class="header__li">Pages</li>
+                    <li class="header__li">Events</li>
+                </ul>
         </div>
-    </div>
+        <div class="header__icons">
+                <a href="#"><img src="./img/svg/header-cart.svg" alt="cart icon"></a>
+                <a href="#"><img src="./img/svg/header-profile.svg" alt="profile icon"></a>
+                <a href="#"><img src="./img/svg/header-search.svg" alt="search icon"></a>
+        </div>
+        <div class="header__buttons">
+                <a href="#">Login</a>
+                <a href="" class="btn">Sign up</a>
+        </div>
+        <button class="mobile-nav-btn none">
+            <div class="nav-icon"></div>
+        </button>
+      
 </header>
 <div class="mobile-nav">
 	<ul class="mobile-nav__list">
@@ -29,12 +46,17 @@
 	</ul>
 </div>
 
-		<footer class="footer">
+			
+			<footer class="footer">
 	<div class="container">
 		<h2>Footer</h2>
 	</div>
 </footer>
 
+
+			
+		</div>
+		
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

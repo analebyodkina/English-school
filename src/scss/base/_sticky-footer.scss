@@ -3,6 +3,11 @@ html, body {
     display: flex;
     flex-direction: column;
 }
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
 .footer {
     margin-top: auto;

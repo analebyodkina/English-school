@@ -1,9 +1,39 @@
 html {
 	scroll-behavior: smooth;
+	font-size: 1px;
 }
 
 body {
 	background-color: var(--page-bg);
 	color: var(--text-color);
     font-family: var(--font-main);
+	font-size: 10rem;
+}
+.wrapper {
+	max-width: 1920px;
+	margin-inline: auto;
+	width: 100%;
+}
+.container {
+	max-width: var(--container-width);
+	padding: 0 15rem;
+    margin-inline: auto;
+}
+img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+// КАСТОМИЗИРОВАТЬ СКРОЛ
+*::-webkit-scrollbar {
+    width: 10rem;
+    height: 10rem;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 16rem;
+    height: 10px;
+    width: 8rem;
+    background-color: rgba(red, $alpha: 0.9);    
 }
