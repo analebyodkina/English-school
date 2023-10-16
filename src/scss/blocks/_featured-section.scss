@@ -1,6 +1,22 @@
 .featured-section {
     padding: 120px 15px 103px;
     background: linear-gradient(0deg, #D9ECFF 0%, rgba(240, 243, 255, 0) 100%);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;        
+    }
+    &__circle {        
+        position: absolute;
+        top: 0;
+        left: 70px;
+        width: 103px;
+        height: 103px;        
+        transform: rotate(-150deg); 
+             
+    }
     &__title {
         margin-bottom: 48px;
         span {
@@ -33,6 +49,8 @@
     }
 
     &__btn {
+        margin-inline: auto;
+        margin-top: 91px;
     }
 }
 
@@ -78,12 +96,14 @@
         align-items: center;
         justify-content: space-between;
         color: var(--color-text);
-font-size: 22px;
-font-family: var(--font-main);
-font-weight: 600;
-line-height: 35px;
+        font-size: 22px;
+        font-family: var(--font-main);
+        font-weight: 600;
+        line-height: 35px;
+        a {
+            color: var(--color-text);
+        }
 
     }
 }
-.btn {
-}
+
