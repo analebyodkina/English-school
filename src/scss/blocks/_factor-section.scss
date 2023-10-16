@@ -1,0 +1,26 @@
+.factor-section {
+    display: flex;
+    padding: 135px 0 114px 112px;
+    gap: 150px;
+
+
+    &__image {
+    }
+
+    &__info {
+        max-width: 761px;
+    }
+
+    &__title {
+        margin-bottom: 52px;
+        text-align: start;
+    }
+
+    &__text {
+        color: var(--color-text);
+        font-size: 18px;        
+        font-weight: 400;
+        line-height: 28px; 
+        margin-bottom: 48px;     
+    }
+}

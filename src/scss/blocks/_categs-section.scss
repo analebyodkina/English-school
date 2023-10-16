@@ -1,15 +1,8 @@
 .categs-section {
     padding: 101px 0 155px;
-    background: linear-gradient(0deg, #D9ECFF 0%, rgba(240, 243, 255, 0) 100%);  
-
-    &__container {
-    }
-
+    background: linear-gradient(0deg, #D9ECFF 0%, rgba(240, 243, 255, 0) 100%);
     &__title {
-        margin-bottom: 42px;
-        span {
-            color: var(--accent);
-        }
+        margin-bottom: 42px;        
     }
 
     &__info {        

@@ -55,4 +55,7 @@ font-family: var(--font-accent);
 font-weight: 400;
 line-height: 70px;
 text-align: center;
+	span {
+		color: var(--accent);
+	}
 }
