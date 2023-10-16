@@ -31,7 +31,7 @@
         line-height: 35px;
         max-width: 691px;
         text-align: center;
-        margin-inline: auto;
+        
 
     }
 
@@ -52,58 +52,58 @@
         margin-inline: auto;
         margin-top: 91px;
     }
-}
-
-.card {
-
-    &__image {
-        padding-bottom: 24px;
-        img {
-            border-radius: 20px 20px 0 0;  
-
-        }       
-    }
-    &__info {
-        padding: 0 35px 30px; 
-
-    }
-
-    &__header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: var(--color-text);
-        font-size: 14px;
-        font-family: var(--font-main);
-        font-weight: 500;
-        line-height: 35px;
-        padding-bottom: 21px;
-
-    }
-
-    &__title {
-        color: var(--color-titles);
-        font-size: 25px;
-        font-family: var(--font-main);
-        font-weight: 600;
-        line-height: 35px;
-        padding-bottom: 33px;
-
-    }
-
-    &__footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: var(--color-text);
-        font-size: 22px;
-        font-family: var(--font-main);
-        font-weight: 600;
-        line-height: 35px;
-        a {
-            color: var(--color-text);
+    .card {
+        &__image {
+            padding-bottom: 24px;
+            img {
+                border-radius: 20px 20px 0 0;  
+    
+            }       
         }
-
+        &__info {
+            padding: 0 35px 30px; 
+    
+        }
+    
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--color-text);
+            font-size: 14px;
+            font-family: var(--font-main);
+            font-weight: 500;
+            line-height: 35px;
+            padding-bottom: 21px;
+    
+        }
+    
+        &__title {
+            color: var(--color-titles);
+            font-size: 25px;
+            font-family: var(--font-main);
+            font-weight: 600;
+            line-height: 35px;
+            padding-bottom: 33px;
+    
+        }
+    
+        &__footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--color-text);
+            font-size: 22px;
+            font-family: var(--font-main);
+            font-weight: 600;
+            line-height: 35px;
+            a {
+                color: var(--color-text);
+            }
+    
+        }
     }
 }
+
+
 
