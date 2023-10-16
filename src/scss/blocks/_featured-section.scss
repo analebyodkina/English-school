@@ -42,17 +42,13 @@
         column-gap: 40px;
         row-gap: 45px;
     }
-
-    &__card {
-         background: var(--white); 
-         border-radius: 20px;                
-    }
-
     &__btn {
         margin-inline: auto;
         margin-top: 91px;
     }
     .card {
+        background: var(--white); 
+         border-radius: 20px; 
         &__image {
             padding-bottom: 24px;
             img {
