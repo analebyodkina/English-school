@@ -4,17 +4,21 @@
     
     &__container {
         display: flex;
-        padding-bottom: 114px;
+        padding-bottom: 234px;
         gap: 150px; 
-        padding-left: 112px;
-    }
-
-
-    &__image {
-    }
+        padding-left: 112px;        
+    }    
 
     &__info {
         max-width: 761px;
+        position: relative;
+    }
+    .factor-deco {
+        position: absolute;
+        bottom: -40px;
+        right: 0;        
+        max-width: 119px;
+
     }
 
     &__title {
@@ -40,9 +44,17 @@
     }
 
     &__testimonials {
+        position: relative;
         .title {
             margin-bottom: 42px;
         }
+    }
+    .testimonials-deco {
+        position: absolute;
+        top: 3px;
+        left: 134px;        
+        max-width: 115px;
+
     }
 
     &__slogan {
