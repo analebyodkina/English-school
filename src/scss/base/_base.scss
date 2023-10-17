@@ -61,4 +61,10 @@ text-align: center;
 }
 .card {
 	cursor: pointer;
+	img {
+		transition: .2s all ease-in-out;
+	}
+	&:hover {
+		
+	}
 }
