@@ -64,17 +64,22 @@
         box-shadow: 0px 4px 35px rgba(121, 102, 234, 0.08); 
         border-radius: 30px;
         padding: 51px 41px;
-    
+        display: flex;
+        flex-direction: column;
+        
         &__header {
             display: flex;
             align-items: center;
             gap: 33px;
             margin-bottom: 42px;
-
         }
     
         &__img {
             max-width: 65px;
+            border-radius: 50%;
+            img {
+                border-radius: 50%;
+            }
         }
     
         &__name {
@@ -92,9 +97,11 @@
             font-weight: 400;
             line-height: 28px;
             margin-bottom: 50px;
+            flex-grow: 1;
         }
     
         &__stars {
+            max-width: 138px;
         }
     }
     
