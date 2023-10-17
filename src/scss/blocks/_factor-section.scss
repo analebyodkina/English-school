@@ -1,7 +1,12 @@
-.factor-section {
-    display: flex;
-    padding: 135px 0 114px 112px;
-    gap: 150px;
+.factor-section {    
+    padding: 135px 0 0 112px;
+    background: linear-gradient(0deg, #D9ECFF 0%, rgba(240, 243, 255, 0) 100%);
+    
+    &__container {
+        display: flex;
+        padding-bottom: 114px;
+        gap: 150px; 
+    }
 
 
     &__image {
@@ -23,4 +28,69 @@
         line-height: 28px; 
         margin-bottom: 48px;     
     }
+    &__btn {
+    }
+
+    &__video {
+        max-width: 1373px;
+       border-radius: 68px;
+       margin-bottom: 132px;
+       cursor: pointer;
+    }
+
+    &__testimonials {
+        .title {
+            margin-bottom: 42px;
+        }
+    }
+
+    &__slogan {
+        color: var(--color-text);
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 94px;
+        text-align: center;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .card {
+        background: var(--white);
+        box-shadow: 0px 4px 35px rgba(121, 102, 234, 0.08); 
+        border-radius: 30px;
+        padding: 51px 41px;
+    
+        &__header {
+            display: flex;
+            align-items: center;
+            gap: 33px;
+            margin-bottom: 42px;
+
+        }
+    
+        &__img {
+            max-width: 65px;
+        }
+    
+        &__name {
+        }
+    
+        &__text {
+        }
+    
+        &__stars {
+        }
+    }
+    
+
+    
 }
+
+
+    
+
+
+
