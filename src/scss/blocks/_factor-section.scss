@@ -32,18 +32,38 @@
         font-weight: 400;
         line-height: 28px; 
         margin-bottom: 48px;     
-    }
-    &__btn {
-    }
+    }    
 
     &__video {
-        max-width: 1373px;
+       max-width: 1373px;
        border-radius: 68px;
        margin-bottom: 132px;
-       cursor: pointer;
+       cursor: pointer;       
+       position: relative;        
+        a {
+            display: inline-block;
+        }
     }
+    &__play {      
+        display: inline-block;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 218rem;
+        border-radius: 50%;
+        transition: .3s all ease-in-out;
+        &:hover {
+            transform: translate(-50%, -50%) scale(1.05);          
+        }  
+        &:active {
+            transform: translate(-50%, -50%) scale(0.9);          
+        }              
+    }
+    
 
-    &__testimonials {
+    .factor-section__testimonials {
         position: relative;
         .title {
             margin-bottom: 42px;
@@ -116,10 +136,10 @@
             max-width: 138px;
         }
     }
-    
+}
 
     
-}
+
 
 
     
