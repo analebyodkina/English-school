@@ -35,5 +35,8 @@
 	},
 	"browserslist": [
 		"last 5 versions"
-	]
+	],
+	"dependencies": {
+		"aos": "^2.3.4"
+	}
 }

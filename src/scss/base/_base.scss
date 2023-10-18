@@ -66,6 +66,8 @@ img {
 		transition: .2s all ease-in-out;
 	}
 	&:hover {
-		
-	}
+		.card {
+		  transform: rotateY(180deg);
+		}
+	  }
 }
