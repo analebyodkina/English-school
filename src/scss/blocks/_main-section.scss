@@ -98,6 +98,25 @@
     }
 
     &__btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 50px 14px 62px;
+        position: relative;
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            z-index: 1;
+            width: 20px;
+            height: 20px;            
+            path {
+                fill: var(--white);
+            }
+        }
+
+
     }
 
     &__img {  
