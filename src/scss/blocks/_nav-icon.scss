@@ -85,8 +85,8 @@
 	// display: none;
 }
 
-// @media (max-width: 1000px) {
-// 	.mobile-nav-btn {
-// 		display: block;
-// 	}
-// }
+@media (min-width: 1000px) {
+	.mobile-nav-btn {
+		display: block;
+	}
+}
