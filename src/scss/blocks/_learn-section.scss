@@ -2,13 +2,16 @@
     color: var(--white);
     padding: 113px 0 144px;
     background: linear-gradient(72deg, rgba(8, 79, 199, 0.90) 0%, rgba(126.58, 86.29, 216.71, 0.90) 100%);      
-    position: relative; 
+    position: relative;
+    @media screen and (max-width: 992px) { 
+        padding: 50px 0 50px;                
+             
+    } 
     &__deco {
     position: absolute;
     top: 93px;
     left: -150px;
-    transform: rotate(90deg);
-        
+    transform: rotate(90deg);      
     
     }
 
@@ -29,10 +32,10 @@
         margin-bottom: 115px;
         max-width: 728px;
         text-align: center;        
-        font-size: 25px;
+        font-size: 25rem;
         font-family: var(--font-main);
         font-weight: 400;
-        line-height: 35px;
+        line-height: 35rem;
 
     }
 
@@ -43,35 +46,42 @@
         justify-content: space-between;
         column-gap: 93px;
         margin-inline: auto;
+        @media screen and (max-width: 992px) {            
+            flex-direction: column; 
+            .card-line {
+                img {
+                    width: auto;
+                    transform: rotate(90deg);
+                }
+            }        
+        }
         
     }
     .card {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: center;        
         &__image {
             max-width: 80px;
             margin-bottom: 36px;
         }        
     
         &__title {            
-            font-size: 25px;
+            font-size: 25rem;
             font-family: var(--font-accent);
             font-weight: 700;
-            line-height: 32.64px; 
-            margin-bottom: 29px;           
+            line-height: 32.64rem; 
+            margin-bottom: 29rem;           
         }
     
         &__text {            
-            font-size: 18px;
+            font-size: 18rem;
             font-family: var(--font-main);
             font-weight: 400;
-            line-height: 27px;           
+            line-height: 27rem;           
         }
-    }
-
-    
+    }    
 }
 
 
