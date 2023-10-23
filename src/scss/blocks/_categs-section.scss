@@ -1,17 +1,21 @@
 .categs-section {
     padding: 101px 0 155px;
     background: linear-gradient(0deg, #D9ECFF 0%, rgba(240, 243, 255, 0) 100%);
+    @media screen and (max-width: 992px) { 
+        padding: 50px 0 50px;
+        background: linear-gradient(0deg, #b4d6f8 60%, rgba(240, 243, 255, 0) 100%);
+    }
     &__title {
         margin-bottom: 42px;        
     }
 
     &__info {        
         color: var(--color-text);
-        font-size: 25px;
+        font-size: 25rem;
         font-family: var(--font-main);
         font-weight: 500;
-        line-height: 27px;
-        margin-bottom: 100px;
+        line-height: 27rem;
+        margin-bottom: 100rem;
         text-align: center;
     }
 
@@ -29,7 +33,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: center;        
 
         &__image {
             max-width: 90px;
@@ -39,14 +43,12 @@
     
         &__title {
             color: var(--color-titles);
-            font-size: 25px;
+            font-size: 25rem;
             font-weight: 600;
-            line-height: 35px;
-            margin-bottom: 45px;
-        }
-    
-        &__counter {
-        }
+            line-height: 35rem;
+            margin-bottom: 45rem;
+        }    
+        
     }
 }
 
