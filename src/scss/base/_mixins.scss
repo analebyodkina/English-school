@@ -27,26 +27,26 @@
   align-items: center;
 }
 
-// @mixin desktop-small-1200 {
-//   @media (max-width: $desktop-small) {
-//     @content;
-//   }
-// }
-// @mixin tablet-992 {
-//   @media (max-width: $tablet) {
-//     @content;
-//   }
-// }
+@mixin desktop-small-1200 {
+  @media (max-width: $desktop-small) {
+    @content;
+  }
+}
+@mixin tablet-992 {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
 
-// @mixin tablet-small-768 {
-//   @media (max-width: $tablet-small) {
-//     @content;
-//   }
-// }
+@mixin tablet-small-768 {
+  @media (max-width: $tablet-small) {
+    @content;
+  }
+}
 
-// @mixin mobile-576 {
-//   @media (max-width: $mobile) {
-//     @content;
-//   }
-// }
+@mixin mobile-576 {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
 

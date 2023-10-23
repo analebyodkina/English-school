@@ -35,4 +35,10 @@
 	& .active {
 		opacity: 0.5;
 	}
+	.header__nav, .header__buttons {
+		display: block;
+	}
+	.header__icons {
+		display: flex;
+	}
 }

@@ -82,10 +82,10 @@
 
 .mobile-nav-btn {
 	z-index: 999;
-	// display: none;
+	display: none;
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1200px) {
 	.mobile-nav-btn {
 		display: block;
 	}

@@ -3,8 +3,6 @@
 	padding: 27px 15px;	
 	display: flex;	
 	align-items: center;
-	// gap: 140rem;
-
 	
 
 	&__logo {
@@ -30,7 +28,9 @@
 		a.active {
 			color: var(--accent);
 		}
-		
+		@media (max-width: 1200px) {
+			display: none;
+		}
 		
 	}	
 
@@ -41,6 +41,9 @@
 		margin-inline: auto;
 		img {
 			max-width: 25rem;
+		}
+		@media (max-width: 1200px) {
+			display: none;
 		}
 	}
 
@@ -55,7 +58,11 @@
 			text-decoration: underline;
 			line-height: 35px;			
 		}
+		@media (max-width: 1200px) {
+			display: none;
+		}
 	}
+	
 }
 .active {
 }
