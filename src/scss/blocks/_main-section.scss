@@ -1,8 +1,7 @@
 .main-section {
     background: url('/img/main-bg.jpg') 0 0/100% 100%  no-repeat;
     &__top {
-        padding-left: 144px;
-        position: relative;
+        padding-left: 144px;        
         z-index: 10;
         display: flex;
         justify-content: space-between;
@@ -18,7 +17,16 @@
                 background: linear-gradient(257deg, rgba(4, 1, 108, 0.80) 0%, rgba(73.99, 22.44, 189.29, 0.80) 100%); 
                 z-index: -2;
                      
-            }
+        }
+        @media screen and (max-width:1400px) {            
+            padding: 0 15px          
+        }
+        @media screen and (max-width:1200px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center; 
+            gap: 15px;                    
+        }
     } 
     .main-deco {
         position: absolute;
@@ -30,7 +38,18 @@
 
     &__info {
         padding-top: 167px;
-        padding-bottom: 184px;
+        @media screen and (max-width: 1400px) {             
+            padding-bottom: 50px;
+        }  
+        @media screen and (max-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
+            padding-bottom: 0;                   
+        }      
+        @media screen and (max-width: 768px) {            
+            padding-top: 50px;            
+        }
     }
 
     &__slogan {
@@ -47,25 +66,27 @@
     &__title {
         max-width: 670px;
         color: var(--white);
-        font-size: 80px;
+        font-size: 80rem;
         font-family: var(--font-accent);
         font-weight: 400;
-        line-height: 90px;
-        margin-bottom: 90px;        
-    
+        line-height: 90rem;
+        margin-bottom: 90rem;        
+        @media screen and (max-width:1200px) {
+            max-width: initial;                    
+        }
     }
 
     &__buttons {
         display: flex;
         align-items: center;
-        gap: 36px;
-        margin-bottom: 76px;
+        gap: 36rem;
+        margin-bottom: 76rem;
         a {
             color: var(--white);
-            font-size: 18px;
+            font-size: 18rem;
             font-family: Saira;
             font-weight: 500;
-            line-height: 52px;
+            line-height: 52rem;
         }
         ._bordered {
             display: inline-flex;
@@ -154,6 +175,7 @@
         border: 1px solid #707070;
         position: relative;
         z-index: 10;
+        flex-wrap: wrap;
         img {
             max-width: 120rem;
         }
@@ -182,19 +204,19 @@
 
 		&__title {
             color: var(--white);
-            font-size: 16px;
+            font-size: 16rem;
             font-family: var(--font-accent);
             font-weight: 400;
-            line-height: 20.40px;
-            margin-bottom: 20px;
+            line-height: 20.40rem;
+            margin-bottom: 20rem;
 		}
 
 		&__text {
             color: var(--white);
-            font-size: 16px;            
+            font-size: 16rem;            
             font-weight: 400;
-            line-height: 24px; 
-            margin-bottom: 30px;           
+            line-height: 24rem; 
+            margin-bottom: 30rem;           
 		}
 
 		&__footer {
@@ -205,9 +227,9 @@
 
 		&__counter {
             color: var(--accent);
-            font-size: 12px;           
+            font-size: 12rem;           
             font-weight: 700;
-            line-height: 25.20px;           
+            line-height: 25.20rem;           
 		}
         img {
             max-width: 82px;

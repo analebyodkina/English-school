@@ -72,10 +72,12 @@
 
 .nav-icon.nav-icon--active::before {
 	transform: rotate(45deg);
+	background-color: #fff;
 }
 
 .nav-icon.nav-icon--active::after {
 	transform: rotate(-45deg);
+	background-color: #fff;
 }
 
 /* Layout */
