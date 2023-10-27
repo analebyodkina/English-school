@@ -16,10 +16,10 @@
 		}
 		a {
 			color: var(--dark-blue);
-			font-size: 20px;			
+			font-size: 20rem;			
 			font-weight: 500;
 			text-transform: capitalize;
-			line-height: 26px;	
+			line-height: 26rem;	
 			transition: var(--transition);
 			&:hover {
 				color: var(--accent);
@@ -53,10 +53,10 @@
 		gap: 39px;
 		a:first-of-type {
 			color: #4A4A4A;
-			font-size: 20px;			
+			font-size: 20rem;			
 			font-weight: 500;
 			text-decoration: underline;
-			line-height: 35px;			
+			line-height: 35rem;			
 		}
 		@media (max-width: 1200px) {
 			display: none;
@@ -64,14 +64,3 @@
 	}
 	
 }
-.active {
-}
-.btn {
-}
-.mobile-nav-btn {
-}
-.none {
-}
-.nav-icon {
-}
-

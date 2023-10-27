@@ -18,7 +18,9 @@
 }
 
 .mobile-nav a {
-	color: #fff;
+	color: var(--white);
+	font-size: 28rem;
+	
 }
 
 .mobile-nav__list {
@@ -38,7 +40,11 @@
 		flex-direction: column;
 		gap: 20px;
 	}
-	.header__icons {
+	.header__icons,.header__buttons {
 		display: flex;
+		align-items: center;
+		a {
+			color: var(--white);
+		}
 	}
 }
