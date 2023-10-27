@@ -1,17 +1,36 @@
 .factor-section {    
     padding: 135px 0 147px 0;
     background: linear-gradient(0deg, #D9ECFF 0%, rgba(240, 243, 255, 0) 100%);
-    
+    @media screen and (max-width: 992px) {
+        padding-top: 50rem;  
+        padding-bottom: 50rem;  
+    }
     &__container {
         display: flex;
         padding-bottom: 234px;
         gap: 150px; 
-        padding-left: 112px;        
+        padding-left: 112px;  
+        @media screen and (max-width: 1400px) {            
+            padding-inline: 15px; 
+            gap: 50rem;        
+        } 
+        @media screen and (max-width: 992px) {            
+            flex-direction: column; 
+            align-items: center; 
+            text-align: center;
+            padding-bottom: 150px;              
+        }    
     }    
 
     &__info {
-        max-width: 761px;
+        flex: 0 1 761px;
         position: relative;
+        @media screen and (max-width: 992px) {            
+            flex-basis: auto;            
+        }
+    }
+    &__image {
+        max-width: 664px;
     }
     .factor-deco {
         position: absolute;
@@ -22,8 +41,11 @@
     }
 
     &__title {
-        margin-bottom: 52px;
+        margin-bottom: 52rem;
         text-align: start;
+        @media screen and (max-width: 992px) { 
+            text-align: center;              
+        }
     }
 
     &__text {
@@ -42,6 +64,9 @@
        position: relative;        
         a {
             display: inline-block;
+        }
+        @media screen and (max-width: 992px) {
+            margin-bottom: 50rem;             
         }
     }
     &__play {      
@@ -72,24 +97,27 @@
     .testimonials-deco {
         position: absolute;
         top: 3px;
-        left: 134px;        
-        max-width: 115px;
+        left: 134rem;        
+        max-width: 115rem;
+        @media screen and (max-width: 992px) { 
+            left: 50rem;              
+        }
 
     }
 
     &__slogan {
         color: var(--color-text);
-        font-size: 25px;
+        font-size: 25rem;
         font-weight: 500;
-        line-height: 40px;
-        margin-bottom: 94px;
+        line-height: 40rem;
+        margin-bottom: 94rem;
         text-align: center;
     }
 
     &__row {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 32px;
+        gap: 32rem;
     }
     .card {
         background: var(--white);
@@ -102,8 +130,8 @@
         &__header {
             display: flex;
             align-items: center;
-            gap: 33px;
-            margin-bottom: 42px;
+            gap: 33rem;
+            margin-bottom: 42rem;
         }
     
         &__img {
@@ -116,19 +144,19 @@
     
         &__name {
             color: var(--card-name);
-            font-size: 25px;
+            font-size: 25rem;
             font-family: var(--font-accent);
             font-weight: 700;
-            line-height: 40px;
+            line-height: 40rem;
         }
     
         &__text {
             color: var(--card-text);
-            font-size: 18px;
+            font-size: 18rem;
             font-family: var(--font-main);
             font-weight: 400;
-            line-height: 28px;
-            margin-bottom: 50px;
+            line-height: 28rem;
+            margin-bottom: 50rem;
             flex-grow: 1;
         }
     
