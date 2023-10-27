@@ -19,7 +19,7 @@
                      
         }
         @media screen and (max-width: 1400px) {            
-            padding: 0 15px          
+            padding: 0 15px;          
         }
         @media screen and (max-width: 1200px) {
             flex-direction: column;
@@ -55,12 +55,12 @@
     &__slogan {
         color: var(--white);
         opacity: 0.8;
-        font-size: 18px;        
+        font-size: 18rem;        
         font-weight: 600;
         text-transform: uppercase;
-        line-height: 20px;
-        letter-spacing: 3px;
-        margin-bottom: 63px;
+        line-height: 20rem;
+        letter-spacing: 3rem;
+        margin-bottom: 63rem;
     }
 
     &__title {
@@ -71,8 +71,11 @@
         font-weight: 400;
         line-height: 90rem;
         margin-bottom: 90rem;        
-        @media screen and (max-width:1200px) {
+        @media screen and (max-width: 1200px) {
             max-width: initial;                    
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 65rem;                   
         }
     }
 
@@ -94,8 +97,8 @@
             border-radius: 10px;
             border: 2px solid var(--white);
             font-weight: 600;
-            line-height: 28px;
-            letter-spacing: 1px;
+            line-height: 28rem;
+            letter-spacing: 1rem;
         }
         
     }
@@ -121,7 +124,7 @@
     &__btn {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 12rem;
         padding: 14px 50px 14px 62px;
         position: relative;
         svg {
@@ -235,8 +238,4 @@
             max-width: 82px;
         }
 }
-
-
 }
-
-

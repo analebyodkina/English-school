@@ -13,15 +13,61 @@
 	transition: all 0.2s ease-in;
 }
 
-.mobile-nav--open {
+.mobile-nav--open {	
 	top: 0;
 }
 
 .mobile-nav a {
 	color: var(--white);
 	font-size: 28rem;
-	
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+@-webkit-keyframes text-focus-in {
+	0% {
+	  -webkit-filter: blur(12px);
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+  @keyframes text-focus-in {
+	0% {
+	  -webkit-filter: blur(12px);
+			  filter: blur(12px);
+	  opacity: 0;
+	}
+	100% {
+	  -webkit-filter: blur(0px);
+			  filter: blur(0px);
+	  opacity: 1;
+	}
+  }
+  .mobile-nav a:nth-child(1) {
+	animation-delay: -1s;
+  }
+  .mobile-nav a:nth-child(2) {
+	animation-delay: -2s;
+  }
+  .mobile-nav a:nth-child(3) {
+	animation-delay: -0.5s;
+  }
+  .mobile-nav a:nth-child(4) {
+	animation-delay: -0.4s;
+  }
+  .mobile-nav a:nth-child(5) {
+	animation-delay: -0.3s;
+  }
+  .mobile-nav a:nth-child(6) {
+	animation-delay: -0.2s;
+  }
+//   .mobile-nav an:nth-child(7) {
+// 	animation-delay: -0.1s;
+//   }
 
 .mobile-nav__list {
 	display: flex;
@@ -33,7 +79,7 @@
 	& .active {
 		opacity: 0.5;
 	}
-	.header__nav, .header__buttons {
+	.header__nav {
 		display: block;
 	}
 	.header__nav ul {
