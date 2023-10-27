@@ -8,7 +8,7 @@
     &__container {
         display: flex;
         padding-bottom: 234px;
-        gap: 150px; 
+        gap: 150rem; 
         padding-left: 112px;  
         @media screen and (max-width: 1400px) {            
             padding-inline: 15px; 
@@ -18,7 +18,7 @@
             flex-direction: column; 
             align-items: center; 
             text-align: center;
-            padding-bottom: 150px;              
+            padding-bottom: 150rem;              
         }    
     }    
 
@@ -59,7 +59,7 @@
     &__video {
        max-width: 1373px;
        border-radius: 68px;
-       margin-bottom: 132px;
+       margin-bottom: 132rem;
        cursor: pointer;       
        position: relative;        
         a {
