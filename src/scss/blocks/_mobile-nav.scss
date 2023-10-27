@@ -1,19 +1,15 @@
 .mobile-nav {
-	position: fixed;
-	// top: 0;
+	position: fixed;	
 	top: -120%;
 	width: 100%;
 	height: 100%;
     z-index: 99;
-
 	display: flex;
     flex-direction: column;
     align-items: center;
-	justify-content: center;
-    padding-top: 40px;
+	justify-content: center;    
     padding-bottom: 40px;
-    background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
-	// background: rgb(130, 156, 168);
+    background: linear-gradient(72deg, rgba(8, 79, 199) 0%, rgba(126.58, 86.29, 216.71) 100%); 	
 	transition: all 0.2s ease-in;
 }
 
@@ -40,6 +36,7 @@
 	}
 	.header__nav ul {
 		flex-direction: column;
+		gap: 20px;
 	}
 	.header__icons {
 		display: flex;
