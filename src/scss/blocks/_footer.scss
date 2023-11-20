@@ -117,7 +117,11 @@
 		align-items: center;
 		gap: 20px;
 		img {
-			max-width: 20px;
-		}
+			max-width: 20px;			
+			transition: var(--transition);
+			&:hover {
+				scale: 1.3;
+			}
+		}		
 	}
 }

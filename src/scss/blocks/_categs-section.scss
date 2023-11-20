@@ -53,7 +53,14 @@
             font-weight: 600;
             line-height: 35rem;
             margin-bottom: 45rem;
-        }    
+        } 
+        &__counter {
+            color: #4F547B;
+            font-size: 18rem;
+            font-family: Saira;
+            font-weight: 500;
+            line-height: 23rem;            
+        }   
         
     }
 }
