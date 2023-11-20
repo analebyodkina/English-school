@@ -7,67 +7,43 @@
 	display: flex;
     flex-direction: column;
     align-items: center;
-	justify-content: center;    
-    padding-bottom: 40px;
+	justify-content: center;  	 
+    padding-bottom: 40rem;
     background: linear-gradient(72deg, rgba(8, 79, 199) 0%, rgba(126.58, 86.29, 216.71) 100%); 	
+	// background: radial-gradient(ellipse farthest-corner at center bottom, #6beace, #2e9aa4);
 	transition: all 0.2s ease-in;
 }
+
 
 .mobile-nav--open {	
 	top: 0;
 }
 
-.mobile-nav a {
-	color: var(--white);
-	font-size: 28rem;
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+.mobile-nav a {	
+	cursor: pointer;		
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 80px;
+	letter-spacing: 0.02em;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 0.02em;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-repeat: no-repeat;
+  transition: background-size .5s cubic-bezier(0.67, 0.01, 0.15, 0.98);
+  background-image: linear-gradient(135deg, #fff 0%, #fff 50%, transparent 50.1%);
+  background-size: 0% 100%;
+ 
+  &:hover {
+    background-size: 220% 120%;
+  }
+  @media (max-width: 576px) {
+	font-size: 50px;
 }
-@-webkit-keyframes text-focus-in {
-	0% {
-	  -webkit-filter: blur(12px);
-			  filter: blur(12px);
-	  opacity: 0;
-	}
-	100% {
-	  -webkit-filter: blur(0px);
-			  filter: blur(0px);
-	  opacity: 1;
-	}
-  }
-  @keyframes text-focus-in {
-	0% {
-	  -webkit-filter: blur(12px);
-			  filter: blur(12px);
-	  opacity: 0;
-	}
-	100% {
-	  -webkit-filter: blur(0px);
-			  filter: blur(0px);
-	  opacity: 1;
-	}
-  }
-  .mobile-nav a:nth-child(1) {
-	animation-delay: -1s;
-  }
-  .mobile-nav a:nth-child(2) {
-	animation-delay: -2s;
-  }
-  .mobile-nav a:nth-child(3) {
-	animation-delay: -0.5s;
-  }
-  .mobile-nav a:nth-child(4) {
-	animation-delay: -0.4s;
-  }
-  .mobile-nav a:nth-child(5) {
-	animation-delay: -0.3s;
-  }
-  .mobile-nav a:nth-child(6) {
-	animation-delay: -0.2s;
-  }
-//   .mobile-nav an:nth-child(7) {
-// 	animation-delay: -0.1s;
-//   }
+}
+	
+
+
 
 .mobile-nav__list {
 	display: flex;
@@ -75,16 +51,13 @@
 	align-items: center;
 	row-gap: 20px;
 	font-size: 28px;
-
-	& .active {
-		opacity: 0.5;
-	}
+	
 	.header__nav {
 		display: block;
 	}
 	.header__nav ul {
 		flex-direction: column;
-		gap: 20px;
+		gap: 40px;
 	}
 	.header__icons,.header__buttons {
 		display: flex;
