@@ -10,7 +10,6 @@
 	justify-content: center;  	 
     padding-bottom: 40rem;
     background: linear-gradient(72deg, rgba(8, 79, 199) 0%, rgba(126.58, 86.29, 216.71) 100%); 	
-	// background: radial-gradient(ellipse farthest-corner at center bottom, #6beace, #2e9aa4);
 	transition: all 0.2s ease-in;
 }
 
@@ -38,18 +37,14 @@
     background-size: 220% 120%;
   }
   @media (max-width: 576px) {
-	font-size: 50px;
+	font-size: 35px;
 }
 }
 	
 
 
 
-.mobile-nav__list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	row-gap: 20px;
+.mobile-nav__list {	
 	font-size: 28px;
 	
 	.header__nav {
@@ -58,6 +53,9 @@
 	.header__nav ul {
 		flex-direction: column;
 		gap: 40px;
+		@media (max-width: 576px) {
+			gap: 20px;
+		}
 	}
 	.header__icons,.header__buttons {
 		display: flex;

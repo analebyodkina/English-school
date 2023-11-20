@@ -152,6 +152,9 @@
         img {
             flex: 0 1 658px;
         }
+        @media screen and (max-width: 1200px) {
+            transform: translateX(70px);                 
+        }
         
     }
     &__bottom {
@@ -185,14 +188,19 @@
 
     }
     .include {
-        min-width: 272px;
-        max-width: 272px;        
+        min-width: 272rem;
+        max-width: 272rem;        
         position: absolute;
         top: 208px;
         left: 0;
         display: flex;
         gap: 20px;        
         z-index: 5;
+
+        @media screen and (max-width: 1200px) {
+            top: 80px;
+            left: -80px;                 
+        }
 		&__line {
             min-width: 24px;
             max-width: 24px;
@@ -203,6 +211,7 @@
 		&__info {
             display: flex;
             flex-direction: column;
+            
 		}
 
 		&__title {
@@ -211,7 +220,7 @@
             font-family: var(--font-accent);
             font-weight: 400;
             line-height: 20.40rem;
-            margin-bottom: 20rem;
+            margin-bottom: 20rem;            
 		}
 
 		&__text {
@@ -219,13 +228,13 @@
             font-size: 16rem;            
             font-weight: 400;
             line-height: 24rem; 
-            margin-bottom: 30rem;           
+            margin-bottom: 30rem;                     
 		}
 
 		&__footer {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 10px;            
 		}
 
 		&__counter {
