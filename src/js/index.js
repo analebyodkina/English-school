@@ -12,6 +12,8 @@ AOS.init();
 var currentYear = new Date().getFullYear();
 document.getElementById("footer-year").innerHTML = currentYear;
 
+const nav = document.querySelector('.mobile-nav');
+
 
 
 
