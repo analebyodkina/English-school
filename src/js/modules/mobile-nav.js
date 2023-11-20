@@ -9,15 +9,17 @@ function mobileNav() {
 	navBtn.onclick = function () {		
 		nav.classList.toggle('mobile-nav--open');
 		menuIcon.classList.toggle('nav-icon--active');
-		document.body.classList.toggle('no-scroll');
+		
 	};
 
 	// Add click event listeners to each link
 	links.forEach(function (link) {
 		link.onclick = function () {
 		  nav.classList.remove('mobile-nav--open');
+		  document.body.classList.remove('no-scroll');
+		  menuIcon.classList.remove('nav-icon--active');
 		};
-		document.body.classList.remove('no-scroll');
+		
 	  });
 }
 
