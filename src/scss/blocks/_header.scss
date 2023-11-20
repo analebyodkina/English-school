@@ -41,9 +41,17 @@
 		display: flex;
 		align-items: center;
 		gap: 28rem;
-		margin-inline: auto;
-		img {
-			max-width: 25rem;
+		margin-inline: auto;		
+		svg {
+			width: 25px;
+			height: 25px;
+			transition: var(--transition);
+			&:hover {
+				scale: 1.1;
+				path {
+					fill: var(--accent);
+				}
+			}
 		}
 		@media (max-width: 1200px) {
 			display: none;
@@ -59,7 +67,11 @@
 			font-size: 20rem;			
 			font-weight: 500;
 			text-decoration: underline;
-			line-height: 35rem;			
+			line-height: 35rem;	
+			transition: var(--transition);
+			&:hover {
+				color: var(--accent);
+			}		
 		}
 		@media (max-width: 1200px) {
 			display: none;
