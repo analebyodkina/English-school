@@ -1,8 +1,7 @@
 .header {
 	width: 100%;	
 	padding: 27px 15px;	
-	display: flex;	
-	align-items: center;
+	@include flex-between;
 	@media screen and (max-width: 576px) {
 		padding: 15px;	                
 	}
@@ -40,9 +39,8 @@
 		
 	}	
 
-	&__icons {
-		display: flex;
-		align-items: center;
+	&__icons {		
+		@include flex-between;
 		gap: 28rem;
 		margin-inline: auto;		
 		svg {
@@ -61,9 +59,8 @@
 		}
 	}
 
-	&__buttons {
-		display: flex;
-		align-items: center;
+	&__buttons {		
+		@include flex-between;
 		gap: 39px;
 		a:first-of-type {
 			color: #4A4A4A;

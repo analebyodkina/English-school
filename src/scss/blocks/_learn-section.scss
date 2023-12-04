@@ -41,9 +41,8 @@
 
     &__row {
         max-width: 1367px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+        width: 100%;        
+        @include flex-between;
         column-gap: 93px;
         margin-inline: auto;
         @media screen and (max-width: 992px) {            

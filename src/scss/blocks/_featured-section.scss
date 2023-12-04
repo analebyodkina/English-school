@@ -65,10 +65,8 @@
     
         }
     
-        &__header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        &__header {            
+            @include flex-between;
             color: var(--color-text);
             font-size: 14rem;
             font-family: var(--font-main);
@@ -88,10 +86,8 @@
     
         }
     
-        &__footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        &__footer {            
+            @include flex-between;
             color: var(--color-text);
             font-size: 22rem;
             font-family: var(--font-main);

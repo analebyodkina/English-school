@@ -103,10 +103,8 @@
         
     }
 
-    &__form {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    &__form {        
+        @include flex-between;
         max-width: 490px;
         background: var(--white);
         width: 100%;

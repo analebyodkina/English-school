@@ -2,9 +2,8 @@
 	background: linear-gradient(95deg, #331DA8 0%, #865AEF 100%);
 	color: var(--white);
 
-	&__top {
-		display: flex;
-		justify-content: space-between;
+	&__top {		
+		@include flex-between;
 		gap: 10px;
 		padding: 118px 0 89px;		
 		border-bottom: 1px rgba(255, 255, 255, 0.32) solid;
@@ -61,7 +60,7 @@
 	}
 	
 
-	&__phone {
+	&__phone {		
 		display: flex;
 		align-items: center;
 		margin-bottom: 35px;				
@@ -74,9 +73,9 @@
 				
     	}
 	}
-	&__mail {
+	&__mail {		
 		display: flex;
-		align-items: center;		
+		align-items: center;	
 		&::before {
 			content: url('/img/svg/mail.svg');
 			display: inline-block;
@@ -86,7 +85,7 @@
 				
     }
 	}
-	&__location {
+	&__location {		
 		display: flex;
 		align-items: center;		
 		&::before {
@@ -103,18 +102,15 @@
 		max-width: 263px;
 	}
 	&__bottom {
-		padding: 33px 0 40px 0;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		padding: 33px 0 40px 0;		
+		@include flex-between;
 		gap: 30px;
 		flex-wrap: wrap;
 		
 	}
 
-	&__socials ul {
-		display: flex;
-		align-items: center;
+	&__socials ul {		
+		@include flex-between;
 		gap: 20px;
 		img {
 			max-width: 20px;			
