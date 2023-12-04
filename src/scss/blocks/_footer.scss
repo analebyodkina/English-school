@@ -25,11 +25,9 @@
 		}
 	}
 
-	&__text {		
-		font-size: 18rem;		
-		font-weight: 400;
-		line-height: 28rem;
-		max-width: 477px;		
+	&__text {
+		max-width: 477px;	
+		@include text (inherit, 18rem, 28rem, 400, inherit);	
 	}
 
 	&__links {
@@ -40,22 +38,16 @@
 		}
 	}
 
-	&__title {
-		font-size: 25rem;
-		font-family: var(--font-accent);
-		font-weight: 700;
-		line-height: 24rem;
+	&__title {		
 		margin-bottom: 95rem;
+		@include text (var(--font-accent), 25rem, 24rem, 700, inherit);
 		@media screen and (max-width: 768px) {
 			margin-bottom: 40rem;		
 		}
 	}
 
-	&__items, &__last, &__items a {		
-		color: var(--white);
-		font-size: 18rem;		
-		font-weight: 500;
-		line-height: 28rem;
+	&__items, &__last, &__items a {
+		@include text (inherit, 18rem, 28rem, 500, var(--white));
 		
 	}
 	

@@ -52,24 +52,17 @@
         }
     }
 
-    &__slogan {
-        color: var(--white);
-        opacity: 0.8;
-        font-size: 18rem;        
-        font-weight: 600;
-        text-transform: uppercase;
-        line-height: 20rem;
+    &__slogan {        
+        opacity: 0.8;        
+        text-transform: uppercase;        
         letter-spacing: 3rem;
         margin-bottom: 63rem;
+        @include text (inherit, 18rem, 20rem, 600, var(--white));
     }
 
     &__title {
-        max-width: 670px;
-        color: var(--white);
-        font-size: 80rem;
-        font-family: var(--font-accent);
-        font-weight: 400;
-        line-height: 90rem;
+        max-width: 670px;        
+        @include text (var(--font-accent), 80rem, 90rem, 400, var(--white));
         margin-bottom: 90rem;        
         @media screen and (max-width: 1200px) {
             max-width: initial;                    
@@ -84,12 +77,9 @@
         align-items: center;
         gap: 36rem;
         margin-bottom: 76rem;
-        a {
-            color: var(--white);
-            font-size: 18rem;
-            font-family: Saira;
-            font-weight: 500;
-            line-height: 52rem;
+        a {            
+            @include text (inherit, 18rem, 52rem, 500, var(--white));
+            
         }
         ._bordered {
             display: inline-flex;
@@ -212,21 +202,14 @@
             
 		}
 
-		&__title {
-            color: var(--white);
-            font-size: 16rem;
-            font-family: var(--font-accent);
-            font-weight: 400;
-            line-height: 20.40rem;
-            margin-bottom: 20rem;            
+		&__title {            
+            margin-bottom: 20rem; 
+            @include text (var(--font-accent), 16rem, 20.4rem, 400, var(--white));           
 		}
 
-		&__text {
-            color: var(--white);
-            font-size: 16rem;            
-            font-weight: 400;
-            line-height: 24rem; 
-            margin-bottom: 30rem;                     
+		&__text {           
+            margin-bottom: 30rem; 
+            @include text (inherit, 16rem, 24rem, 400, var(--white));                    
 		}
 
 		&__footer {
@@ -235,11 +218,8 @@
             gap: 10px;            
 		}
 
-		&__counter {
-            color: var(--accent);
-            font-size: 12rem;           
-            font-weight: 700;
-            line-height: 25.20rem;           
+		&__counter {              
+            @include text (inherit, 12rem, 25.2rem, 700, var(--accent));         
 		}
         img {
             max-width: 82px;

@@ -20,12 +20,10 @@
 			gap: 50px;
 		}
 		a {
-			color: var(--dark-blue);
-			font-size: 20rem;			
-			font-weight: 500;
-			text-transform: capitalize;
-			line-height: 26rem;	
+			text-transform: capitalize;			
+			@include text (inherit, 20rem, 26rem, 500, var(--dark-blue));
 			transition: var(--transition);
+			
 			&:hover {
 				color: var(--accent);
 			}					
@@ -62,12 +60,9 @@
 	&__buttons {		
 		@include flex-between;
 		gap: 39px;
-		a:first-of-type {
-			color: #4A4A4A;
-			font-size: 20rem;			
-			font-weight: 500;
-			text-decoration: underline;
-			line-height: 35rem;	
+		a:first-of-type {			
+			text-decoration: underline;			
+			@include text (inherit, 20rem, 35rem, 500, #4A4A4A);
 			transition: var(--transition);
 			&:hover {
 				color: var(--accent);
