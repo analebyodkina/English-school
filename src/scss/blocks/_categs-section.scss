@@ -9,14 +9,10 @@
         margin-bottom: 42px;        
     }
 
-    &__info {        
-        color: var(--color-text);
-        font-size: 25rem;
-        font-family: var(--font-main);
-        font-weight: 500;
-        line-height: 27rem;
+    &__info {
         margin-bottom: 100rem;
         text-align: center;
+        @include text (var(--font-main), 25rem, 27rem, 500, var(--color-text)); 
     }
 
     &__row {
@@ -47,19 +43,12 @@
             margin-inline: auto;
         }
     
-        &__title {
-            color: var(--color-titles);
-            font-size: 25rem;
-            font-weight: 600;
-            line-height: 35rem;
+        &__title {            
             margin-bottom: 45rem;
+            @include text (var(--font-main), 25rem, 35rem, 600, var(--color-titles)); 
         } 
-        &__counter {
-            color: #4F547B;
-            font-size: 18rem;
-            font-family: Saira;
-            font-weight: 500;
-            line-height: 23rem;            
+        &__counter {            
+            @include text (Saira, 18rem, 23rem, 500, #4F547B);            
         }   
         
     }

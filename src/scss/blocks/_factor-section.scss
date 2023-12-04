@@ -48,12 +48,10 @@
         }
     }
 
-    &__text {
-        color: var(--color-text);
-        font-size: 18px;        
-        font-weight: 400;
-        line-height: 28px; 
-        margin-bottom: 48px;     
+    &__text {         
+        margin-bottom: 48px; 
+        @include text (var(--font-main), 18rem, 28rem, 400, var(--color-text));
+            
     }    
 
     &__video {
@@ -105,13 +103,11 @@
 
     }
 
-    &__slogan {
-        color: var(--color-text);
-        font-size: 25rem;
-        font-weight: 500;
-        line-height: 40rem;
+    &__slogan {        
         margin-bottom: 94rem;
         text-align: center;
+        @include text (var(--font-main), 25rem, 40rem, 500, var(--color-text));
+        
     }
 
     &__row {
@@ -143,22 +139,14 @@
             }
         }
     
-        &__name {
-            color: var(--card-name);
-            font-size: 25rem;
-            font-family: var(--font-accent);
-            font-weight: 700;
-            line-height: 40rem;
+        &__name {            
+            @include text (var(--font-accent), 25rem, 40rem, 700, var(--card-name)); 
         }
     
-        &__text {
-            color: var(--card-text);
-            font-size: 18rem;
-            font-family: var(--font-main);
-            font-weight: 400;
-            line-height: 28rem;
+        &__text {            
             margin-bottom: 50rem;
             flex-grow: 1;
+            @include text (var(--font-main), 18rem, 28rem, 400, var(--card-text));
         }
     
         &__stars {
