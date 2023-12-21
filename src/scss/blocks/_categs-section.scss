@@ -45,7 +45,7 @@
     
         &__title {            
             margin-bottom: 45rem;
-            @include text (var(--font-main), 25rem, 35rem, 600, var(--color-titles)); 
+            @include text (inherit, 25rem, 35rem, 600, var(--color-titles)); 
         } 
         &__counter {            
             @include text (inherit, 18rem, 23rem, 500, #4F547B);            

@@ -24,16 +24,10 @@
     &__title {
         margin-bottom: 48rem;        
     }
-    &__info {
-        color: var(--color-text);
-        font-size: 25rem;
-        font-family: var(--font-main);
-        font-weight: 400;
-        line-height: 35rem;
+    &__info {        
         max-width: 691px;
         text-align: center;
-        
-
+        @include text (var(--font-main), 25rem, 35rem, 400, var(--color-text));
     }
 
     &__row {

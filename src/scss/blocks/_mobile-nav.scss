@@ -44,11 +44,13 @@
 
 
 
-.mobile-nav__list {	
-	font-size: 28px;
+
+.mobile-nav--open {	
+	
 	
 	.header__nav {
 		display: block;
+		font-size: 28px;
 	}
 	.header__nav ul {
 		flex-direction: column;
