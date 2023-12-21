@@ -1,6 +1,7 @@
 .header {
 	width: 100%;	
 	padding: 27px 15px;	
+	gap: 15px;
 	@include flex-between;
 	@media screen and (max-width: 576px) {
 		padding: 15px;	                
@@ -40,13 +41,14 @@
 	&__icons {		
 		@include flex-between;
 		gap: 28rem;
-		margin-inline: auto;		
+		margin-inline: auto;
+		p		
 		svg {
 			width: 25px;
 			height: 25px;
 			transition: var(--transition);
 			&:hover {
-				scale: 1.2 ;
+				scale: 1.2;
 				path {
 					fill: var(--accent);
 				}
@@ -75,34 +77,39 @@
 	.search-container {
 		transition: var(--transition);
 		position: relative;		
-		border-radius: 12px;
-		height: 100%;
-		padding-right: 3px;
+		border-radius: 12px;		
+		padding-left: 6px;
 		&:hover, &:focus {
 			input {
 				width: 100%;
 				opacity: 1;
-				border: 1px solid var(--accent);
+				border: 2px solid var(--accent);
 				z-index: 6;
 			}
 			.search{
 				z-index: 1;
+				svg:hover {
+					scale: 1;
+				}
+				}
 			}
 
-		}
+		
 		input {
 			opacity: 0;
 			width: 0%;
-			height: 36px;
+			height: 46px;
 			transition: var(--transition);
-			border: 1px solid transparent;
+			border: 2px solid transparent;
 			border-radius: 12px;
-			padding: 3px 3px 3px 30px;
+			padding: 3px 3px 3px 40px;					
+			@include text (inherit, 18rem, 24rem, 400, var(--dark-blue));
+					
 		}
 		.search {
 			position: absolute;			
 			top: 50%;
-			left: 3px;
+			left: 15px;
 			transform: translateY(-50%);
 			z-index: 3;
 			transition: var(--transition);
