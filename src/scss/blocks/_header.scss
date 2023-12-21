@@ -5,14 +5,15 @@
 	@include flex-between;
 	@media screen and (max-width: 576px) {
 		padding: 15px;	                
-	}
-	
+	}	
 
 	&__logo {
 		margin-right: auto;
+		max-width: 190px;
 		img {
-			transform: scale(1.3);
+			max-width: 190px;
 		}
+		
 	}
 
 	&__nav {
