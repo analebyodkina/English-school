@@ -42,8 +42,7 @@
 	&__icons {		
 		@include flex-between;
 		gap: 28rem;
-		margin-inline: auto;
-		p		
+		margin-inline: auto;			
 		svg {
 			width: 25px;
 			height: 25px;
@@ -80,7 +79,9 @@
 		position: relative;		
 		border-radius: 12px;		
 		padding-left: 6px;
+		width: 45px;
 		&:hover, &:focus {
+			width: 100%;
 			input {
 				width: 100%;
 				opacity: 1;
@@ -92,9 +93,13 @@
 				svg:hover {
 					scale: 1;
 				}
+			}
+			svg {
+				path {
+					fill: initial;
 				}
 			}
-
+		}
 		
 		input {
 			opacity: 0;
@@ -115,8 +120,5 @@
 			z-index: 3;
 			transition: var(--transition);
 		}
-		
-
-	}
-	
+	}	
 }

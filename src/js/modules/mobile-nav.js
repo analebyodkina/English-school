@@ -9,7 +9,7 @@ function mobileNav() {
 	navBtn.onclick = function () {		
 		nav.classList.toggle('mobile-nav--open');
 		menuIcon.classList.toggle('nav-icon--active');
-		
+		document.getElementById("body").classList.toggle("no-scroll");
 	};
 
 	// Add click event listeners to each link
