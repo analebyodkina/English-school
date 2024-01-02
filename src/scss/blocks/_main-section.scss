@@ -21,7 +21,7 @@
         @media screen and (max-width: 1400px) {            
             padding: 0 15px;          
         }
-        @media screen and (max-width: 1200px) {
+        @include desktop-small-1200 {
             flex-direction: column;
             align-items: center;
             text-align: center; 
@@ -41,13 +41,13 @@
         @media screen and (max-width: 1400px) {             
             padding-bottom: 50px;
         }  
-        @media screen and (max-width: 1200px) {
+        @include desktop-small-1200 {
             display: flex;
             flex-direction: column;
             align-items: center;  
             padding-bottom: 0;                   
         }      
-        @media screen and (max-width: 768px) {            
+        @include tablet-small-768 {            
             padding-top: 50px;            
         }
     }
@@ -64,10 +64,10 @@
         max-width: 670px;        
         @include text (var(--font-accent), 80rem, 90rem, 400, var(--white));
         margin-bottom: 90rem;        
-        @media screen and (max-width: 1200px) {
+        @include desktop-small-1200 {
             max-width: initial;                    
         }
-        @media screen and (max-width: 768px) {
+        @include tablet-small-768 {
             font-size: 65rem;                   
         }
     }
@@ -140,7 +140,7 @@
         img {
             flex: 0 1 658px;
         }
-        @media screen and (max-width: 1200px) {
+        @include desktop-small-1200 {
             transform: translateX(70px);                 
         }
         
@@ -185,9 +185,13 @@
         gap: 20px;        
         z-index: 5;
 
-        @media screen and (max-width: 1200px) {
+        @include desktop-small-1200 {
             top: 80px;
             left: -80px;                 
+        }
+        @include tablet-small-768 {
+            top: 80px;
+            left: 0;                 
         }
 		&__line {
             min-width: 24px;

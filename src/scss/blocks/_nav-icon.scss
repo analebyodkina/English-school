@@ -87,7 +87,7 @@
 	display: none;
 }
 
-@media (max-width: 1200px) {
+@include desktop-small-1200 {
 	.mobile-nav-btn {
 		display: block;
 	}

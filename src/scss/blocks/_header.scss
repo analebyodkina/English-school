@@ -33,7 +33,7 @@
 		a.active {
 			color: var(--accent);
 		}
-		@media (max-width: 1200px) {
+		@include desktop-small-1200 {
 			display: none;
 		}
 		
@@ -54,7 +54,7 @@
 				}
 			}
 		}
-		@media (max-width: 1200px) {
+		@include desktop-small-1200 {
 			display: none;
 		}
 	}
@@ -70,7 +70,7 @@
 				color: var(--accent);
 			}		
 		}
-		@media (max-width: 1200px) {
+		@include desktop-small-1200 {
 			display: none;
 		}
 	}
@@ -78,10 +78,8 @@
 		transition: var(--transition);
 		position: relative;		
 		border-radius: 12px;		
-		padding-left: 6px;
-		width: 45px;
-		&:hover, &:focus {
-			width: 100%;
+		padding-left: 6px;		
+		&:hover, &:focus {			
 			input {
 				width: 100%;
 				opacity: 1;

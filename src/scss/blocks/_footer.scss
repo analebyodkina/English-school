@@ -7,11 +7,11 @@
 		gap: 10px;
 		padding: 118px 0 89px;		
 		border-bottom: 1px rgba(255, 255, 255, 0.32) solid;
-		@media screen and (max-width: 1200px) {
+		@include desktop-small-1200 {
 			flex-wrap: wrap; 			
 			gap: 30px;			
 		}
-		@media screen and (max-width: 576px) {
+		@include mobile-576 {
 			flex-direction: column;	
 			padding: 40px 0;				
 		}
@@ -41,7 +41,7 @@
 	&__title {		
 		margin-bottom: 95rem;
 		@include text (var(--font-accent), 25rem, 24rem, 700, inherit);
-		@media screen and (max-width: 768px) {
+		@include tablet-small-768 {
 			margin-bottom: 40rem;		
 		}
 	}
