@@ -1,115 +1,118 @@
-.footer {	
-	background: linear-gradient(95deg, #331DA8 0%, #865AEF 100%);
-	color: var(--white);
+.footer {
+  background: linear-gradient(95deg, #331da8 0%, #865aef 100%);
+  color: var(--white);
 
-	&__top {		
-		@include flex-between;
-		gap: 10px;
-		padding: 118px 0 89px;		
-		border-bottom: 1px rgba(255, 255, 255, 0.32) solid;
-		@include desktop-small-1200 {
-			flex-wrap: wrap; 			
-			gap: 30px;			
-		}
-		@include mobile-576 {
-			flex-direction: column;	
-			padding: 40px 0;				
-		}
-	}
-
-	&__logo {		
-		img {
-			max-width: 192px;
-			height: 60px;
-			margin-bottom: 74rem;
-		}
-	}
-
-	&__text {
-		max-width: 477px;	
-		@include text (inherit, 18rem, 28rem, 400, inherit);	
-	}
-
-	&__links {
-		.footer__items {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			row-gap: 22px;
-		}
-	}
-
-	&__title {		
-		margin-bottom: 95rem;
-		@include text (var(--font-accent), 25rem, 24rem, 700, inherit);
-		@include tablet-small-768 {
-			margin-bottom: 40rem;		
-		}
-	}
-
-	&__items, &__last, &__items a {
-		@include text (inherit, 18rem, 28rem, 500, var(--white));
-		
-	}
-	
-
-	&__phone {		
-		display: flex;
-		align-items: center;
-		margin-bottom: 35px;				
-		&::before {
-			content: url('/img/svg/phone.svg');
-			display: inline-block;
-			width: 19px;
-			height: 19px;             
-			margin-right: 18px;	
-				
-    	}
-	}
-	&__mail {		
-		display: flex;
-		align-items: center;	
-		&::before {
-			content: url('/img/svg/mail.svg');
-			display: inline-block;
-			width: 19px;
-			height: 19px;             
-			margin-right: 18px;
-				
+  &__top {
+    @include flex-between;
+    gap: 10px;
+    padding: 118px 0 89px;
+    border-bottom: 1px rgba(255, 255, 255, 0.32) solid;
+    @include desktop-small-1200 {
+      flex-wrap: wrap;
+      gap: 30px;
     }
-	}
-	&__location {		
-		display: flex;
-		align-items: center;		
-		&::before {
-			content: url('/img/svg/location.svg');
-			display: inline-block;
-			width: 19px;
-			height: 19px;             
-			margin-right: 18px;
-				
+    @include mobile-576 {
+      flex-direction: column;
+      padding: 40px 0;
+      align-items: stretch;
     }
-	}
+  }
 
-	&__last {
-		max-width: 263px;
-	}
-	&__bottom {
-		padding: 33px 0 40px 0;		
-		@include flex-between;
-		gap: 30px;
-		flex-wrap: wrap;
-		
-	}
+  &__logo {
+    img {
+      max-width: 192px;
+      height: 60px;
+      margin-bottom: 74rem;
+    }
+  }
 
-	&__socials ul {		
-		@include flex-between;
-		gap: 20px;
-		img {
-			max-width: 20px;			
-			transition: var(--transition);
-			&:hover {
-				scale: 1.3;
-			}
-		}		
-	}
+  &__text {
+    max-width: 477px;
+    @include text(inherit, 18rem, 28rem, 400, inherit);
+  }
+
+  &__links {
+    .footer__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 22px;
+      a {
+        transition: var(--transition);
+        &:hover {
+          color: var(--accent);
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 95rem;
+    @include text(var(--font-accent), 25rem, 24rem, 700, inherit);
+    @include tablet-small-768 {
+      margin-bottom: 40rem;
+    }
+  }
+
+  &__items,
+  &__last,
+  &__items a {
+    @include text(inherit, 18rem, 28rem, 500, var(--white));
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    &::before {
+      content: url("/img/svg/phone.svg");
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      margin-right: 18px;
+    }
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: url("/img/svg/mail.svg");
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      margin-right: 18px;
+    }
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: url("/img/svg/location.svg");
+      display: inline-block;
+      width: 19px;
+      height: 19px;
+      margin-right: 18px;
+    }
+  }
+
+  &__last {
+    max-width: 263px;
+  }
+  &__bottom {
+    padding: 33px 0 40px 0;
+    @include flex-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__socials ul {
+    @include flex-between;
+    gap: 20px;
+    img {
+      max-width: 20px;
+      transition: var(--transition);
+      &:hover {
+        scale: 1.3;
+      }
+    }
+  }
 }

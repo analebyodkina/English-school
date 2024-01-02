@@ -1,232 +1,230 @@
 .main-section {
-    background: url('/img/main-bg.jpg') 0 0/100% 100%  no-repeat;
-    &__top {
-        padding-left: 144px;        
-        z-index: 10;
-        display: flex;
-        justify-content: space-between;
-        gap: 40px;        
-        position: relative;
-        &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(257deg, rgba(4, 1, 108, 0.80) 0%, rgba(73.99, 22.44, 189.29, 0.80) 100%); 
-                z-index: -2;
-                     
-        }
-        @media screen and (max-width: 1400px) {            
-            padding: 0 15px;          
-        }
-        @include desktop-small-1200 {
-            flex-direction: column;
-            align-items: center;
-            text-align: center; 
-            gap: 15px;                    
-        }
-    } 
-    .main-deco {
-        position: absolute;
-        bottom: -30px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }  
+  background: url("/img/main-bg.jpg") 0 0/100% 100% no-repeat;
+  &__top {
+    padding-left: 144px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        257deg,
+        rgba(4, 1, 108, 0.8) 0%,
+        rgba(73.99, 22.44, 189.29, 0.8) 100%
+      );
+      z-index: -2;
+    }
+    @media screen and (max-width: 1400px) {
+      padding: 0 15px;
+    }
+    @include desktop-small-1200 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 15px;
+    }
+  }
+  .main-deco {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
 
-    &__info {
-        padding-top: 167px;
-        @media screen and (max-width: 1400px) {             
-            padding-bottom: 50px;
-        }  
-        @include desktop-small-1200 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;  
-            padding-bottom: 0;                   
-        }      
-        @include tablet-small-768 {            
-            padding-top: 50px;            
-        }
+  &__info {
+    padding-top: 167px;
+    @media screen and (max-width: 1400px) {
+      padding-bottom: 50px;
+    }
+    @include desktop-small-1200 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 0;
+    }
+    @include tablet-small-768 {
+      padding-top: 50px;
+    }
+  }
+
+  &__slogan {
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 3rem;
+    margin-bottom: 63rem;
+    @include text(inherit, 18rem, 20rem, 600, var(--white));
+  }
+
+  &__title {
+    max-width: 670px;
+    @include text(var(--font-accent), 80rem, 90rem, 400, var(--white));
+    margin-bottom: 90rem;
+    @include desktop-small-1200 {
+      max-width: initial;
+    }
+    @include tablet-small-768 {
+      font-size: 65rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 36rem;
+    margin-bottom: 76rem;
+    a {
+      @include text(inherit, 18rem, 52rem, 500, var(--white));
+    }
+    ._bordered {
+      display: inline-flex;
+      padding: 12px 34px;
+      border-radius: 10px;
+      border: 2px solid var(--white);
+      font-weight: 600;
+      line-height: 28rem;
+      letter-spacing: 1rem;
+    }
+  }
+
+  &__form {
+    @include flex-between;
+    max-width: 490px;
+    background: var(--white);
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px;
+    input {
+      color: #4f547b;
+      font-size: 16rem;
+      width: 100%;
+      padding: 0 15px 0 25px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+    padding: 14px 50px 14px 62px;
+    position: relative;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      z-index: 1;
+      width: 20px;
+      height: 20px;
+      path {
+        fill: var(--white);
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    flex-basis: 50%;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: end;
+    img {
+      flex: 0 1 658px;
+    }
+    @include desktop-small-1200 {
+      transform: translateX(70px);
+    }
+  }
+  &__bottom {
+    position: relative;
+    z-index: 10;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        #084fc7 0%,
+        rgba(8, 79, 199, 0.5) 100%
+      );
+      z-index: 1;
+    }
+  }
+  &__brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130rem;
+    padding: 50rem 0;
+    border: 1px solid #707070;
+    position: relative;
+    z-index: 10;
+    flex-wrap: wrap;
+    img {
+      max-width: 120rem;
+    }
+  }
+  .include {
+    min-width: 272rem;
+    max-width: 272rem;
+    position: absolute;
+    top: 208px;
+    left: 0;
+    display: flex;
+    gap: 20px;
+    z-index: 5;
+
+    @include desktop-small-1200 {
+      top: 80px;
+      left: -80px;
+    }
+    @include tablet-small-768 {
+      top: 80px;
+      left: 0;
+    }
+    &__line {
+      min-width: 24px;
+      max-width: 24px;
+      height: 146px;
+      object-fit: contain;
     }
 
-    &__slogan {        
-        opacity: 0.8;        
-        text-transform: uppercase;        
-        letter-spacing: 3rem;
-        margin-bottom: 63rem;
-        @include text (inherit, 18rem, 20rem, 600, var(--white));
+    &__info {
+      display: flex;
+      flex-direction: column;
     }
 
     &__title {
-        max-width: 670px;        
-        @include text (var(--font-accent), 80rem, 90rem, 400, var(--white));
-        margin-bottom: 90rem;        
-        @include desktop-small-1200 {
-            max-width: initial;                    
-        }
-        @include tablet-small-768 {
-            font-size: 65rem;                   
-        }
+      margin-bottom: 20rem;
+      @include text(var(--font-accent), 16rem, 20.4rem, 400, var(--white));
     }
 
-    &__buttons {
-        display: flex;
-        align-items: center;
-        gap: 36rem;
-        margin-bottom: 76rem;
-        a {            
-            @include text (inherit, 18rem, 52rem, 500, var(--white));
-            
-        }
-        ._bordered {
-            display: inline-flex;
-            padding: 12px 34px;
-            border-radius: 10px;
-            border: 2px solid var(--white);
-            font-weight: 600;
-            line-height: 28rem;
-            letter-spacing: 1rem;
-        }
-        
+    &__text {
+      margin-bottom: 30rem;
+      @include text(inherit, 16rem, 24rem, 400, var(--white));
     }
 
-    &__form {        
-        @include flex-between;
-        max-width: 490px;
-        background: var(--white);
-        width: 100%;
-        border-radius: 7px;
-        padding: 10px;
-        input {
-            color: #4F547B;
-            font-size: 16rem; 
-            width: 100%;
-            padding: 0 15px 0 25px;           
-            
-        }
+    &__footer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
-    &__btn {
-        display: flex;
-        align-items: center;
-        gap: 12rem;
-        padding: 14px 50px 14px 62px;
-        position: relative;
-        svg {
-            position: absolute;
-            top: 50%;
-            left: 30px;
-            transform: translateY(-50%);
-            z-index: 1;
-            width: 20px;
-            height: 20px;            
-            path {
-                fill: var(--white);
-            }
-        }
-
-
+    &__counter {
+      @include text(inherit, 12rem, 25.2rem, 700, var(--accent));
     }
-
-    &__img {  
-         position: relative;
-         flex-basis: 50%;
-         flex-shrink: 1;
-         display: flex;
-         justify-content: end;   
-        img {
-            flex: 0 1 658px;
-        }
-        @include desktop-small-1200 {
-            transform: translateX(70px);                 
-        }
-        
+    img {
+      max-width: 82px;
     }
-    &__bottom {
-        position: relative;
-        z-index: 10;
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(180deg, #084FC7 0%, rgba(8, 79, 199, 0.5) 100%); 
-              z-index: 1;       
-            }
-
-    }
-    &__brands {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 130rem;
-        padding: 50rem 0;
-        border: 1px solid #707070;
-        position: relative;
-        z-index: 10;
-        flex-wrap: wrap;
-        img {
-            max-width: 120rem;
-        }
-
-    }
-    .include {
-        min-width: 272rem;
-        max-width: 272rem;        
-        position: absolute;
-        top: 208px;
-        left: 0;
-        display: flex;
-        gap: 20px;        
-        z-index: 5;
-
-        @include desktop-small-1200 {
-            top: 80px;
-            left: -80px;                 
-        }
-        @include tablet-small-768 {
-            top: 80px;
-            left: 0;                 
-        }
-		&__line {
-            min-width: 24px;
-            max-width: 24px;
-            height: 146px;
-            object-fit: contain;
-		}
-
-		&__info {
-            display: flex;
-            flex-direction: column;
-            
-		}
-
-		&__title {            
-            margin-bottom: 20rem; 
-            @include text (var(--font-accent), 16rem, 20.4rem, 400, var(--white));           
-		}
-
-		&__text {           
-            margin-bottom: 30rem; 
-            @include text (inherit, 16rem, 24rem, 400, var(--white));                    
-		}
-
-		&__footer {
-            display: flex;
-            align-items: center;
-            gap: 10px;            
-		}
-
-		&__counter {              
-            @include text (inherit, 12rem, 25.2rem, 700, var(--accent));         
-		}
-        img {
-            max-width: 82px;
-        }
-}
+  }
 }

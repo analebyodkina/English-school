@@ -1,7 +1,7 @@
 .factor-section {    
     padding: 135px 0 147px 0;
     background: linear-gradient(0deg, #D9ECFF 0%, rgba(240, 243, 255, 0) 100%);
-    @media screen and (max-width: 992px) {
+    @include tablet-992  {
         padding-top: 50rem;  
         padding-bottom: 50rem;  
     }
@@ -14,7 +14,7 @@
             padding-inline: 15px; 
             gap: 50rem;        
         } 
-        @media screen and (max-width: 992px) {            
+        @include tablet-992  {            
             flex-direction: column; 
             align-items: center; 
             text-align: center;
@@ -25,7 +25,7 @@
     &__info {
         flex: 0 1 761px;
         position: relative;
-        @media screen and (max-width: 992px) {            
+        @include tablet-992  {            
             flex-basis: auto;            
         }
     }
@@ -43,7 +43,7 @@
     &__title {
         margin-bottom: 52rem;
         text-align: start;
-        @media screen and (max-width: 992px) { 
+        @include tablet-992  { 
             text-align: center;              
         }
     }
@@ -63,7 +63,7 @@
         a {
             display: inline-block;
         }
-        @media screen and (max-width: 992px) {
+        @include tablet-992  {
             margin-bottom: 50rem;             
         }
     }
@@ -74,7 +74,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 218rem;
+        max-width: clamp(120rem, 25vw, 218rem);
         border-radius: 50%;
         transition: .3s all ease-in-out;
         &:hover {
@@ -82,29 +82,33 @@
         }  
         &:active {
             transform: translate(-50%, -50%) scale(0.9);          
-        }              
+        }
+                     
     }
     
 
     .factor-section__testimonials {
         position: relative;
         .title {
-            margin-bottom: 42px;
+            margin-bottom: clamp(25rem, 3.5vw, 42rem); 
         }
     }
     .testimonials-deco {
         position: absolute;
         top: 3px;
         left: 134rem;        
-        max-width: 115rem;
-        @media screen and (max-width: 992px) { 
+        max-width: clamp(55rem, 20vw, 115rem);
+        @include tablet-992  { 
             left: 50rem;              
         }
-
+        @include mobile-576  { 
+            left: 10rem; 
+            top: -25rem;             
+        }
     }
 
     &__slogan {        
-        margin-bottom: 94rem;
+        margin-bottom: clamp(45rem, 5.5vw, 94rem);
         text-align: center;
         @include text (var(--font-main), 25rem, 40rem, 500, var(--color-text));
         

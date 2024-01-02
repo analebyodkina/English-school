@@ -1,122 +1,120 @@
 .header {
-	width: 100%;	
-	padding: 27px 15px;	
-	gap: 15px;
-	@include flex-between;
-	@media screen and (max-width: 576px) {
-		padding: 15px;	                
-	}	
+  width: 100%;
+  padding: 27px 15px;
+  gap: 15px;
+  @include flex-between;
+  @include mobile-576 {
+    padding: 15px;
+  }
 
-	&__logo {
-		margin-right: auto;
-		max-width: 190px;
-		img {
-			max-width: 190px;
-		}
-		
-	}
+  &__logo {
+    margin-right: auto;
+    max-width: 190px;
+    img {
+      max-width: 190px;
+    }
+  }
 
-	&__nav {
-		ul{
-			display: flex;
-			gap: 50px;
-		}
-		a {
-			text-transform: capitalize;			
-			@include text (inherit, 20rem, 26rem, 500, var(--dark-blue));
-			transition: var(--transition);
-			
-			&:hover {
-				color: var(--accent);
-			}					
-		}
-		a.active {
-			color: var(--accent);
-		}
-		@include desktop-small-1200 {
-			display: none;
-		}
-		
-	}	
+  &__nav {
+    ul {
+      display: flex;
+      gap: 50px;
+    }
+    a {
+      text-transform: capitalize;
+      @include text(inherit, 20rem, 26rem, 500, var(--dark-blue));
+      transition: var(--transition);
 
-	&__icons {		
-		@include flex-between;
-		gap: 28rem;
-		margin-inline: auto;			
-		svg {
-			width: 25px;
-			height: 25px;
-			transition: var(--transition);
-			&:hover {
-				scale: 1.2;
-				path {
-					fill: var(--accent);
-				}
-			}
-		}
-		@include desktop-small-1200 {
-			display: none;
-		}
-	}
+      &:hover {
+        color: var(--accent);
+      }
+    }
+    a.active {
+      color: var(--accent);
+    }
+    @include desktop-small-1200 {
+      display: none;
+    }
+  }
 
-	&__buttons {		
-		@include flex-between;
-		gap: 39px;
-		a:first-of-type {			
-			text-decoration: underline;			
-			@include text (inherit, 20rem, 35rem, 500, #4A4A4A);
-			transition: var(--transition);
-			&:hover {
-				color: var(--accent);
-			}		
-		}
-		@include desktop-small-1200 {
-			display: none;
-		}
-	}
-	.search-container {
-		transition: var(--transition);
-		position: relative;		
-		border-radius: 12px;		
-		padding-left: 6px;		
-		&:hover, &:focus {			
-			input {
-				width: 100%;
-				opacity: 1;
-				border: 2px solid var(--accent);
-				z-index: 6;
-			}
-			.search{
-				z-index: 1;
-				svg:hover {
-					scale: 1;
-				}
-			}
-			svg {
-				path {
-					fill: initial;
-				}
-			}
-		}
-		
-		input {
-			opacity: 0;
-			width: 0%;
-			height: 46px;
-			transition: var(--transition);
-			border: 2px solid transparent;
-			border-radius: 12px;
-			padding: 3px 3px 3px 40px;					
-			@include text (inherit, 18rem, 24rem, 400, var(--dark-blue));
-					
-		}
-		.search {
-			position: absolute;			
-			top: 50%;
-			left: 15px;
-			transform: translateY(-50%);
-			z-index: 3;
-			transition: var(--transition);
-		}
-	}	
+  &__icons {
+    @include flex-between;
+    gap: 28rem;
+    margin-inline: auto;
+    svg {
+      width: 25px;
+      height: 25px;
+      transition: var(--transition);
+      &:hover {
+        scale: 1.2;
+        path {
+          fill: var(--accent);
+        }
+      }
+    }
+    @include desktop-small-1200 {
+      display: none;
+    }
+  }
+
+  &__buttons {
+    @include flex-between;
+    gap: 39px;
+    a:first-of-type {
+      text-decoration: underline;
+      @include text(inherit, 20rem, 35rem, 500, #4a4a4a);
+      transition: var(--transition);
+      &:hover {
+        color: var(--accent);
+      }
+    }
+    @include desktop-small-1200 {
+      display: none;
+    }
+  }
+  .search-container {
+    transition: var(--transition);
+    position: relative;
+    border-radius: 12px;
+    padding-left: 6px;
+    &:hover,
+    &:focus {
+      input {
+        width: 100%;
+        opacity: 1;
+        border: 2px solid var(--accent);
+        z-index: 6;
+      }
+      .search {
+        z-index: 1;
+        svg:hover {
+          scale: 1;
+        }
+      }
+      svg {
+        path {
+          fill: initial;
+        }
+      }
+    }
+
+    input {
+      opacity: 0;
+      width: 0%;
+      height: 46px;
+      transition: var(--transition);
+      border: 2px solid transparent;
+      border-radius: 12px;
+      padding: 3px 3px 3px 40px;
+      @include text(inherit, 18rem, 24rem, 400, var(--dark-blue));
+    }
+    .search {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      z-index: 3;
+      transition: var(--transition);
+    }
+  }
 }

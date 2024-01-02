@@ -1,75 +1,75 @@
 .learn-section {
-    color: var(--white);
-    padding: 113px 0 144px;
-    background: linear-gradient(72deg, rgba(8, 79, 199, 0.90) 0%, rgba(126.58, 86.29, 216.71, 0.90) 100%);      
-    position: relative;
-    @media screen and (max-width: 992px) { 
-        padding: 50px 0 50px;                
-             
-    } 
-    &__deco {
+  color: var(--white);
+  padding: 113px 0 144px;
+  background: linear-gradient(
+    72deg,
+    rgba(8, 79, 199, 0.9) 0%,
+    rgba(126.58, 86.29, 216.71, 0.9) 100%
+  );
+  position: relative;
+  @include tablet-992 {
+    padding: 50px 0 50px;
+  }
+  &__deco {
     position: absolute;
     top: 93px;
     left: -150px;
-    transform: rotate(90deg);      
-    
-    }
+    transform: rotate(90deg);
+  }
 
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;        
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__circle {
+  }
+
+  &__title {
+    margin-bottom: 29px;
+    color: var(--white);
+  }
+
+  &__info {
+    margin-bottom: 115px;
+    max-width: 728px;
+    text-align: center;
+    @include text(var(--font-main), 25rem, 35rem, 400, inherit);
+  }
+
+  &__row {
+    max-width: 1367px;
+    width: 100%;
+    @include flex-between;
+    column-gap: 93px;
+    margin-inline: auto;
+    @include tablet-992 {
+      flex-direction: column;
+      .card-line {
+        img {
+          width: auto;
+          transform: rotate(90deg);
+        }
+      }
     }
-    &__circle {
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__image {
+      max-width: 80px;
+      margin-bottom: 36px;
     }
 
     &__title {
-        margin-bottom: 29px;
-        color: var(--white);        
-    }
-    
-    &__info {
-        margin-bottom: 115px;
-        max-width: 728px;
-        text-align: center;
-        @include text (var(--font-main), 25rem, 35rem, 400, inherit);
-
+      margin-bottom: 29rem;
+      @include text(var(--font-accent), 25rem, 32.64rem, 700, inherit);
     }
 
-    &__row {
-        max-width: 1367px;
-        width: 100%;        
-        @include flex-between;
-        column-gap: 93px;
-        margin-inline: auto;
-        @media screen and (max-width: 992px) {            
-            flex-direction: column; 
-            .card-line {
-                img {
-                    width: auto;
-                    transform: rotate(90deg);
-                }
-            }        
-        }
-        
+    &__text {
+      @include text(var(--font-main), 18rem, 27rem, 400, inherit);
     }
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;        
-        &__image {
-            max-width: 80px;
-            margin-bottom: 36px;
-        }        
-    
-        &__title { 
-            margin-bottom: 29rem;  
-            @include text (var(--font-accent), 25rem, 32.64rem, 700, inherit);         
-        }
-    
-        &__text {
-            @include text (var(--font-main), 18rem, 27rem, 400, inherit);        
-        }
-    }    
+  }
 }

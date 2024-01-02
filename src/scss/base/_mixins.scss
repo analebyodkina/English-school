@@ -1,4 +1,4 @@
-@mixin text ($ff, $fz, $lh, $fw, $color) {
+@mixin text($ff, $fz, $lh, $fw, $color) {
   font-family: $ff;
   font-size: $fz;
   line-height: $lh;
@@ -33,4 +33,3 @@
     @content;
   }
 }
-

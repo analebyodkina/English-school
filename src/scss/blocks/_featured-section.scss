@@ -1,99 +1,89 @@
 .featured-section {
-    padding: 120px 0 103px;
-    background: linear-gradient(0deg, #D9ECFF 0%, rgba(240, 243, 255, 0) 100%);
-    @media screen and (max-width: 992px) { 
-        padding: 50px 0 50px;         
-             
+  padding: 120px 0 103px;
+  background: linear-gradient(0deg, #d9ecff 0%, rgba(240, 243, 255, 0) 100%);
+  @include tablet-992 {
+    padding: 50px 0 50px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  &__circle {
+    position: absolute;
+    top: 0;
+    left: 70rem;
+    width: 103rem;
+    height: 103rem;
+    transform: rotate(-150deg);
+  }
+  &__title {
+    margin-bottom: 48rem;
+  }
+  &__info {
+    max-width: 691px;
+    text-align: center;
+    @include text(var(--font-main), 25rem, 35rem, 400, var(--color-text));
+  }
+
+  &__row {
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    column-gap: 40px;
+    row-gap: 45px;
+    @include tablet-992 {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+  &__btn {
+    margin-inline: auto;
+    margin-top: 91px;
+  }
+  .card {
+    background: var(--white);
+    border-radius: 20px;
+    &__image {
+      padding-bottom: 24px;
+      img {
+        border-radius: 20px 20px 0 0;
+      }
+    }
+    &__info {
+      padding: 0 35px 30px;
     }
 
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;        
+    &__header {
+      @include flex-between;
+      color: var(--color-text);
+      font-size: 14rem;
+      font-family: var(--font-main);
+      font-weight: 500;
+      line-height: 35rem;
+      padding-bottom: 21rem;
     }
-    &__circle {        
-        position: absolute;
-        top: 0;
-        left: 70rem;
-        width: 103rem;
-        height: 103rem;        
-        transform: rotate(-150deg); 
-             
-    }
+
     &__title {
-        margin-bottom: 48rem;        
-    }
-    &__info {        
-        max-width: 691px;
-        text-align: center;
-        @include text (var(--font-main), 25rem, 35rem, 400, var(--color-text));
+      color: var(--color-titles);
+      font-size: 25rem;
+      font-family: var(--font-main);
+      font-weight: 600;
+      line-height: 35rem;
+      padding-bottom: 33rem;
     }
 
-    &__row {
-        padding-top: 90px;
-        display: grid;
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
-        column-gap: 40px;
-        row-gap: 45px;
-        @media screen and (max-width: 992px) {            
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));        
-        }
+    &__footer {
+      @include flex-between;
+      color: var(--color-text);
+      font-size: 22rem;
+      font-family: var(--font-main);
+      font-weight: 600;
+      line-height: 35rem;
+      a {
+        color: var(--color-text);
+      }
     }
-    &__btn {
-        margin-inline: auto;
-        margin-top: 91px;
-    }
-    .card {
-        background: var(--white); 
-         border-radius: 20px; 
-        &__image {
-            padding-bottom: 24px;
-            img {
-                border-radius: 20px 20px 0 0;  
-    
-            }       
-        }
-        &__info {
-            padding: 0 35px 30px; 
-    
-        }
-    
-        &__header {            
-            @include flex-between;
-            color: var(--color-text);
-            font-size: 14rem;
-            font-family: var(--font-main);
-            font-weight: 500;
-            line-height: 35rem;
-            padding-bottom: 21rem;
-    
-        }
-    
-        &__title {
-            color: var(--color-titles);
-            font-size: 25rem;
-            font-family: var(--font-main);
-            font-weight: 600;
-            line-height: 35rem;
-            padding-bottom: 33rem;
-    
-        }
-    
-        &__footer {            
-            @include flex-between;
-            color: var(--color-text);
-            font-size: 22rem;
-            font-family: var(--font-main);
-            font-weight: 600;
-            line-height: 35rem;
-            a {
-                color: var(--color-text);
-            }
-    
-        }
-    }
+  }
 }
-
-
-
