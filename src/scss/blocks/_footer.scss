@@ -64,7 +64,7 @@
     align-items: center;
     margin-bottom: 35px;
     &::before {
-      content: url("./img/svg/phone.svg");
+      content: url(../img/svg/phone.svg);
       display: inline-block;
       width: 19px;
       height: 19px;
@@ -75,7 +75,7 @@
     display: flex;
     align-items: center;
     &::before {
-      content: url("../../img/svg/mail.svg");
+      content: url(../img/svg/mail.svg);
       display: inline-block;
       width: 19px;
       height: 19px;
@@ -86,7 +86,7 @@
     display: flex;
     align-items: center;
     &::before {
-      content: url("./img/svg/location.svg");
+      content: url(../img/svg/location.svg);
       display: inline-block;
       width: 19px;
       height: 19px;
