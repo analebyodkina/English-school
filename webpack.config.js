@@ -2,7 +2,7 @@ const config = {
 	mode: 'production',
 	entry: {
 		index: './src/js/index.js'
-		// contacts: './src/js/contacts.js',
+		// notFound: './src/js/notFound.js',
 		// about: './src/js/about.js',
 	},
 	output: {

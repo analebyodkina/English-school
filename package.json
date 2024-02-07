@@ -8,6 +8,7 @@
 		"gulp-babel": "^8.0.0",
 		"gulp-changed": "^4.0.3",
 		"gulp-clean": "^0.4.0",
+		"gulp-connect": "^5.7.0",
 		"gulp-csso": "^4.0.1",
 		"gulp-file-include": "^2.3.0",
 		"gulp-group-css-media-queries": "^1.2.2",
@@ -37,6 +38,7 @@
 		"last 5 versions"
 	],
 	"dependencies": {
-		"aos": "^2.3.4"
+		"aos": "^2.3.4",
+		"connect-history-api-fallback": "^2.0.0"
 	}
 }
