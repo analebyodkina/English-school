@@ -118,6 +118,7 @@ gulp.task('js:docs', function () {
 const serverOptions = {
 	livereload: true,
 	open: true,
+	fallback: '/notFound.html',
 };
 
 gulp.task('server:docs', function () {
