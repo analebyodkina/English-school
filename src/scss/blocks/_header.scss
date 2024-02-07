@@ -1,21 +1,24 @@
 .header {
   width: 100%;
   padding: 27px 15px;
-  gap: 15px;
-  @include flex-between;
+  gap: 25px;
+  // @include flex-between;
+  display: flex;
+  align-items: center;
   @include mobile-576 {
     padding: 15px;
   }
 
   &__logo {
-    margin-right: auto;
-    max-width: 190px;
+    max-width: 170px;
+
     img {
       max-width: 190px;
     }
   }
 
   &__nav {
+    width: fit-content;
     ul {
       display: flex;
       gap: 50px;
@@ -39,8 +42,12 @@
 
   &__icons {
     @include flex-between;
-    gap: 28rem;
-    margin-inline: auto;
+    margin-left: auto;
+    gap: 15rem;
+    // margin-inline: auto;
+    a {
+      flex-shrink: 0;
+    }
     svg {
       width: 25px;
       height: 25px;
@@ -58,6 +65,7 @@
   }
 
   &__buttons {
+   
     @include flex-between;
     gap: 39px;
     a:first-of-type {
@@ -73,17 +81,20 @@
     }
   }
   .search-container {
-    transition: var(--transition);
+    transition: 0.8s all ease;
     position: relative;
     border-radius: 12px;
-    padding-left: 6px;
+    cursor: pointer;
+    width: 25px;
     &:hover,
     &:focus {
+      width: auto;
       input {
         width: 100%;
         opacity: 1;
         border: 2px solid var(--accent);
         z-index: 6;
+        padding: 3px 3px 3px 40px;
       }
       .search {
         z-index: 1;
@@ -105,13 +116,14 @@
       transition: var(--transition);
       border: 2px solid transparent;
       border-radius: 12px;
-      padding: 3px 3px 3px 40px;
+      padding: 0;
       @include text(inherit, 18rem, 24rem, 400, var(--dark-blue));
     }
     .search {
       position: absolute;
       top: 50%;
       left: 15px;
+      width: 25px;
       transform: translateY(-50%);
       z-index: 3;
       transition: var(--transition);
