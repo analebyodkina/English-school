@@ -94,11 +94,12 @@
       }
     }
     input {
+      max-width: 14vw;
       height: 46px;
       transition: var(--transition);
       border: 2px solid var(--accent);
       border-radius: 12px;
-      padding: 3px 3px 3px 32px;
+      padding: 3px 6px 3px 32px;
       @include text(inherit, 18rem, 24rem, 400, var(--dark-blue));
     }
     .search {
