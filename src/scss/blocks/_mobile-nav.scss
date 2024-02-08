@@ -40,12 +40,17 @@
     transparent 50.1%
   );
   background-size: 0% 100%;
+  animation: mymove 1.5s ease-out;
+  animation-fill-mode: forwards;
 
-  &:hover {
-    background-size: 220% 120%;
-  }
+  // &:hover {
+  //   background-size: 220% 120%;
+  // }
   @include mobile-576 {
     font-size: 35px;
+  }
+  @keyframes mymove {
+    100% {background-size: 220% 120%}
   }
 }
 
